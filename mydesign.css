@@ -5,3 +5,4 @@ h3 {background-color:rgba(251, 253, 255, 0.45);color:rgba(210, 0, 0, 0.902)}
 th {background-color: rgb(116, 172, 153);color:black;padding:10px}
 td {background-color: rgba(239, 239, 239, 0.427);color: rgb(0, 0, 0);padding:10px}
 .hyou {background-color: rgba(7, 198, 45, 0.721);}   /*tdの部分をtd class="hyou"にすると、行のスタイルを変更できる*/
+
