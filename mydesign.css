@@ -1,8 +1,68 @@
 body {background-color:rgb(160, 219, 219);font-weight: bold;font-family: 'TsukuARdGothic-Regular','Times New Roman','Yu Gothic',sans-serif;}
+
 h1 {padding: 10px;}
 h2 {background-color: rgb(116, 172, 153);color: black;padding: 7px;}
 h3 {background-color:rgba(251, 253, 255, 0.45);color:rgba(210, 0, 0, 0.902)}
+
+/*表の設定*/
 th {background-color: rgb(116, 172, 153);color:black;padding:10px}
 td {background-color: rgba(239, 239, 239, 0.427);color: rgb(0, 0, 0);padding:10px}
-.hyou {background-color: rgba(7, 198, 45, 0.721);}   /*tdの部分をtd class="hyou"にすると、行のスタイルを変更できる*/
+table {margin: auto;}
 
+/*リンクするときの文字*/
+a{font-weight: bold;}
+
+/*お問い合わせ*/
+#a2{font-size:18px; background-color: rgba(91, 196, 196, 0.826); padding-left:15px; margin: auto;}
+
+/*アコーディオンメニューの設定*/
+div {font-size:18px ;font-weight: bold;font-family: 'TsukuARdGothic-Regular','Times New Roman','Yu Gothic',sans-serif;}
+.menu {max-width: 600px;}/*メニュー全体（div）の大きさ*/
+.menu a {
+    display: block;/*メニュー内の項目の見た目*/
+    padding: 8px;
+    text-decoration: none;/*メニュー内の項目の下線*/
+    color: #000;
+}
+
+input {display: none;}/*チェックボックスを隠す*/
+
+label {/*メニューのタイトルの設定*/
+    display: block;
+    margin: 0 0 4px 0;
+    padding : 15px;
+    line-height: 1;
+    color :rgb(0, 0, 0);
+    background : rgb(116, 172, 153);
+    cursor :pointer;/*カーソルを合わせると指で示すマークになる*/
+}
+
+.menu ul {/*チェックボックスを隠す*/
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    background :rgba(239, 239, 239, 0.427);
+    list-style: none;max-width: 600px;
+}
+
+.menu li {
+    height: 0;
+    overflow: hidden;/*縮めて収まり切らない文章は非表示にする*/
+    -webkit-transition: all 0.5s;/*ブラウザごとに互換性を持たせる*/
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;/*畳まれた状態と広げられた状態を滑らかに変化させる*/
+}
+
+#menu_bar01:checked ~ #links01 li,
+#menu_bar02:checked ~ #links02 li,
+#menu_bar03:checked ~ #links03 li {height: 40px;opacity: 1;}/*伸びる幅と透過（0~1）*/
+
+/* responxive for under 800px-wide*/
+@media screen and (max-width:800px){
+    h1 {font-size:24px;}
+    label {font-size:12px;}
+    .menu li{font-size: 11px;min-width: 140px;}
+    #a2 {font-size: 12px;}
+    #betable {font-size:10px;}
+}
