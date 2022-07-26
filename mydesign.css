@@ -3,6 +3,7 @@ body {background-color:rgb(160, 219, 219);font-weight: bold;font-family: 'TsukuA
 h1 {padding: 10px;}
 h2 {background-color: rgb(116, 172, 153);color: black;padding: 7px;}
 h3 {background-color:rgba(251, 253, 255, 0.45);color:rgba(210, 0, 0, 0.902)}
+#akaji {color:rgba(210, 0, 0, 0.902);}
 
 /*表の設定*/
 th {background-color: rgb(116, 172, 153);color:black;padding:10px}
